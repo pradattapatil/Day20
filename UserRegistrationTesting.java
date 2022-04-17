@@ -7,14 +7,14 @@ public class UserRegistrationTesting {
     @Test
     public void givenFirstName_whenProper_ShouldReturnTrue() {
         UserRegistrationRegex userRegistrationRegEx = new UserRegistrationRegex();
-        boolean result = userRegistrationRegEx.firstNameValidate("Aniruddha");
+        boolean result = userRegistrationRegEx.firstNameValidate("Pradatta");
         Assert.assertTrue(result);
     }
 
     @Test
     public void givenFirstName_whenNotProper_ShouldReturnFalse() {
         UserRegistrationRegex userRegistrationRegEx = new UserRegistrationRegex();
-        boolean result = userRegistrationRegEx.firstNameValidate("ani");
+        boolean result = userRegistrationRegEx.firstNameValidate("pra");
         Assert.assertFalse(result);
     }
 
